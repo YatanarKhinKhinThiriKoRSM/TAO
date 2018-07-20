@@ -1,0 +1,44 @@
+            .t40 {
+      width: 40%;
+    }
+    .t60 {
+      width: 60%;
+    }
+    .w3 {
+      width: 3%;
+    }
+    .w7 {
+      width: 7%;
+    }
+    .w5 {
+      width: 5%;
+    }
+    .w12  {
+      width: 12%;
+    }
+    .w10 {
+      width: 10%;
+    }
+    .w18 {
+      width: 18%;
+    }
+    .w13 {
+      width: 13%;
+    }
+    .pdl40 {
+      padding-left: 40px;
+    }
+    .pdt10 {
+      padding-top: 10px;
+    }
+    .bdn{
+      border: 1px white solid;
+    }
+    table.reesult tr td:first-child{
+        width: 40%;
+    }
+    .table_btn{
+      height: 28px !important;
+      border: none !important;
+      line-height: 15px !important;
+    }
