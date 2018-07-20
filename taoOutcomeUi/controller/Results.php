@@ -253,7 +253,7 @@ class Results extends tao_actions_SaSModule
                     'id' => $deliveryExecution->getIdentifier(),
                     'ttaker' => empty($testTaker->getLabel())? $res['testTakerIdentifier'] : _dh($testTaker->getLabel()),
                     'time' => $startTime,
-					'deliname' => empty($deliveryExecution->getLabel())? $res['deliveryResultIdentifier'] : _dh($deliveryExecution->getLabel()),
+		    'deliname' => empty($deliveryExecution->getLabel())? $res['deliveryResultIdentifier'] : _dh($deliveryExecution->getLabel()),
                 );
 
                 $readOnly[$deliveryExecution->getIdentifier()] = $rights;
@@ -360,7 +360,7 @@ class Results extends tao_actions_SaSModule
             $this->setData('classUri', $this->getRequestParameter("classUri"));
             $this->setData('filterSubmission', $filterSubmission);
             $this->setData('filterTypes', $filterTypes);
-			$this->setData('title', $delivery->getLabel());
+	    $this->setData('title', $delivery->getLabel());
             $this->setView('viewResult.tpl');
         } catch (\common_exception_Error $e) {
             $this->setData('type', 'error');
@@ -377,7 +377,7 @@ class Results extends tao_actions_SaSModule
      * @throws \common_exception_NotFound
      * @throws \common_exception_ValidationFailed
      */
-    /*public function downloadXML()
+    public function downloadXML()
     {
         try {
             if (!$this->hasRequestParameter('id') || empty($this->getRequestParameter('id'))) {
@@ -399,7 +399,7 @@ class Results extends tao_actions_SaSModule
         } catch (\common_exception_UserReadableException $e) {
             $this->returnJson(array('error' => $e->getUserMessage()));
         }
-    }*/
+    }
 
     /**
      * Get the data for the file in the response and allow user to download it
